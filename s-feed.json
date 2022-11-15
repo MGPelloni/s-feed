@@ -1,0 +1,11 @@
+{
+	"name": "S-Feed",
+	"version": "1.0.0",
+	"download_url": "http://social-feed.tech/releases/s-feed.zip",
+	"homepage": "https://social-feed.tech/",
+	"author": "Marco Pelloni",
+	"sections" : {
+		"description" : "Access Instagram data using the Basic Display API via S-Feed proxy."
+	},
+	"author_homepage": "https://marcopelloni.com/"
+}
