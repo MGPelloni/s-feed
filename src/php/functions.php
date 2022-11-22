@@ -22,10 +22,10 @@ function sfeed_get_instagram($endpoint) {
  */
 function sfeed_get_data() {
     $data = [];
-    $users = sfeed_users_load();
+    $users = sfeed_urls_load();
     
-    foreach ($users as $key => $user) {
-        $data[] = sfeed_get_instagram($user['url']);
+    foreach ($urls as $key => $url) {
+        $data[] = sfeed_get_instagram($url);
     }
 
     return $data;
@@ -54,11 +54,11 @@ function sfeed_get_user($username) {
  * @return string|boolean The S-Feed endpoint or false on no user found.
  */
 function sfeed_get_endpoint($username) {
-    $users = sfeed_users_load();
+    $users = sfeed_urls_load();
 
-    foreach ($users as $key => $user) {
-        if (strpos($user['url'], $username) !== false) {
-            return $user['url'];
+    foreach ($urls as $key => $url) {
+        if (strpos($url, $username) !== false) {
+            return $url;
         }
     }
 

@@ -1,6 +1,5 @@
 {
   "name": "s-feed",
-  "author": "Marco Pelloni",
   "version": "0.0.0-semantic-release",
   "scripts": {
     "start": "gulp",
